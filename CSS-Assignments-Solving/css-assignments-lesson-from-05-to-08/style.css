@@ -1,1 +1,85 @@
-      echo.  
+* { font-family: sans-serif; color: white;}
+/* Assignment 1 */
+.assign-1-shape-1 ,
+.assign-1-shape-2 ,
+.assign-1-shape-3 {
+      width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: hsl(271, 76%, 53%);
+      background-color: rgb(138, 44, 226);
+      background-color: #8a2ce2;
+}
+.assign-1-shape-2 {
+      background-color: hsla(271, 76%, 53%, 0.5);
+}
+.assign-1-shape-3 {
+      background-color: hsla(271, 76%, 53%, 0.1);
+}
+
+/* Assignment 2 */
+.assign-2-shape-1 ,
+.assign-2-shape-2 ,
+.assign-2-shape-3 ,
+.assign-2-shape-4 ,
+.assign-3-shape-1 ,
+.assign-3-shape-2 ,
+.assign-3-shape-3 ,
+.assign-3-shape-4 ,
+.assign-4-shape-1 ,
+.assign-4-shape-2 ,
+.assign-4-shape-3 ,
+.assign-4-shape-4 {
+      display: inline-block; /* To fit the desired shape */
+      width: 400px;
+      height: 400px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #eee;
+      background-image: url(images/main-image.png);
+}
+.assign-2-shape-1 {
+      background-repeat: no-repeat;
+}
+.assign-2-shape-2 {
+      background-repeat: repeat-y;
+}
+.assign-2-shape-3 {
+      background-repeat: repeat-x;
+}
+
+/* Assignment 3 */
+.assign-3-shape-1 {
+      background-repeat: no-repeat;
+}
+.assign-3-shape-2 {
+      background-repeat: repeat-y;
+      background-position: right;
+}
+.assign-3-shape-3 {
+      background-repeat: repeat-x;
+      background-position: bottom;
+}
+
+ /* Assignment 4 */
+.assign-4-shape-1 ,
+.assign-4-shape-2 ,
+.assign-4-shape-3 ,
+.assign-4-shape-4 {
+      background-repeat: no-repeat;
+}
+.assign-4-shape-1 {
+      background-size: 80%;
+}
+.assign-4-shape-2 {
+      background-position: right ;
+      background-size: 80% 100%; 
+}
+.assign-4-shape-3 {
+      background-position: bottom ;
+      background-size:100% 80%; 
+}
+.assign-4-shape-4 {
+      background-position: bottom right ;
+      background-size:50% 
+}
