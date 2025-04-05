@@ -19,12 +19,14 @@ span {
 }
 
 /* Assignment 2 */
+
 div {
     background-color: #eee;
     margin: 20px 10px ;
     padding: 10px;
     border-left: 5px solid;
     outline: 10px solid #eee;
+    width: 400px;
 }
 .element-1 {
     border-color: #e91e63;
