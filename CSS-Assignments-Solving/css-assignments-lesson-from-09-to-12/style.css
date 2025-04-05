@@ -1,1 +1,37 @@
-      echo.  
+/* Assignment 1 */
+span {
+    display: inline-block;
+    background-color: #eee;
+    padding: 20px;
+    border: 5px solid;
+    outline: 5px solid;
+    margin: 10px;
+}
+.Shape1 {
+    border-color: red;
+}
+.Shape2 {
+    border-color: blue green;
+} 
+.Shape3 {
+    border-color: red green blue yellow;
+    border-style: dashed;
+}
+
+/* Assignment 2 */
+div {
+    background-color: #eee;
+    margin: 20px 10px ;
+    padding: 10px;
+    border-left: 5px solid;
+    outline: 10px solid #eee;
+}
+.element-1 {
+    border-color: #e91e63;
+}
+.element-2 {
+    visibility: hidden;
+}
+.element-3 {
+    border-color: #009688;
+}
