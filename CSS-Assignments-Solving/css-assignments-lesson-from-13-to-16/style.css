@@ -1,1 +1,23 @@
-      echo.  
+/* Assignment 1 */
+.parent .child .title {
+    color: red;
+}
+.parent .title {
+    color: blue;
+}
+p,
+div.title {
+    color: green;
+}
+
+/* Assignment 2 */
+.Assignment-Two div {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 40px;
+    overflow: hidden;
+}
