@@ -32,7 +32,9 @@ div:not(.Assignment-1) { /*افتكاسة مني عشان قال لا تقم ب�
 /* Assignment 4 */
 a {
 	padding: 10px;
-	margin: 10px auto;
+	margin: 20px auto;
+	width: fit-content;
+	display: block; /*The element must be block to be centered.*/
 	color: white;
 	background-color: #009688;
 	border-bottom: 5px solid #006057;
