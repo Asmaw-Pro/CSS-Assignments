@@ -2,6 +2,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 }
+
 /* Assignment 1 */
 .Assignment-1 {
 	text-shadow: 
@@ -19,7 +20,7 @@
 }
 
 /* Assignment 3 */
-div:not(.Assignment-1) { /*افتكاسة مني عشان قال لا تقم بالتعديل على كود HTML */
+div:not(.Assignment-1) { /*😁 HTML افتكاسة مني عشان شرط: لا تقم بالتعديل على كود */
 	padding: 20px ;
 	margin: 10px;
 	background-color: #eee;
@@ -33,10 +34,10 @@ a {
 	padding: 10px;
 	margin: 20px auto;
 	width: fit-content;
-	display: block; /*The element must be block to be centered.*/
+	display: block; /*The element must be block to be centered by "margin:auto".*/
 	color: white;
 	background-color: #009688;
-	border-bottom: 5px solid #006057;
+	border-bottom: 5px solid #00514a;
 	text-decoration: none;
 	text-transform: capitalize;
 }
