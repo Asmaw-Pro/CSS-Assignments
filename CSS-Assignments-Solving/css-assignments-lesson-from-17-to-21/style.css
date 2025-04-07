@@ -1,1 +1,41 @@
-      echo.  
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+/* Assignment 1 */
+.Assignment-1 {
+	text-shadow: 
+	1px 1px 0 red,
+	2px 2px 0 blue,
+	3px 3px 0 blueviolet;
+	
+}
+
+/* Assignment 2 */
+.one {
+	text-transform: uppercase;
+}
+.two {
+	text-transform: capitalize;
+}
+
+/* Assignment 3 */
+div:not(.Assignment-1) { /*افتكاسة مني عشان قال لا تقم بالتعديل على كود HTML */
+	padding: 20px ;
+	margin: 10px;
+	background-color: #eee;
+	text-wrap: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Assignment 4 */
+a {
+	padding: 10px;
+	margin: 10px auto;
+	color: white;
+	background-color: #009688;
+	border-bottom: 5px solid #006057;
+	text-decoration: none;
+	text-transform: capitalize;
+}
