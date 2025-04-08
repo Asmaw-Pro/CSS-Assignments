@@ -1,1 +1,53 @@
-      echo.  
+/* Assignment 1 */
+div {
+    padding: 20px;
+    margin: 20px auto;
+    border: 3px solid #ff5722 ;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    background-color: #dedede;
+    padding: inherit;
+    border: inherit;
+    margin: 0;
+}
+
+/* Assignment 2 */
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+.shape2-1 {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: italic;
+}
+.shape2-2 {
+    font-family: cairo ;
+    font-weight: 700;
+}
+.shape2-3 {
+    font-family: Jomhuria;
+    font-weight: 400;
+}
+
+/* Assignment 3 */
+.shape3-1 , 
+.shape3-2 ,
+.shape3-3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.shape3-1 {
+    font-size: 3.125rem;
+    /* font-size: 50px; */
+}
+.shape3-2 {
+    font-size: 2.5rem;
+    /* font-size: 40px; */
+}
+.shape3-3 {
+    font-size: 1.875rem;
+    /* font-size: 30px; */
+}
