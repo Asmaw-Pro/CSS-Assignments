@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+/* Assignment 1 */
+.container {
+    width: 800px;
+    margin: 20px auto;
+    background-color: #eee;
+    font-weight: 600;
+    overflow: hidden;
+}
+p {
+    padding: 15px 0;
+    margin-left: 15px;
+    margin-top: 0;
+    background-color: #ddd;
+    text-align: center;
+    float: left; 
+}
+.full p {
+    margin-top: 15px;
+    width: calc(100% - 30px);
+    /* width: calc(100% - ( (1 + 1) * 15px)); */
+}
+.third p {
+    width: calc((100% - 60px)/ 3);
+    /* width: calc((100% - ( ( 3 + 1 ) * 15px))/ 3); */
+}
+.half p {
+    width: calc((100% - 45px)/ 2);
+    /* width: calc((100% - ( ( 2 + 1 ) * 15px))/ 2); */
+}
+.quarter p {
+    width: calc((100% - 75px)/ 4);
+    /* width: calc((100% - ( (4 + 1) * 15px))/ 4); */
+}
+
+/* Assignment 2 */
+.normal ,
+.one ,
+.two {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #b3b3b3;
+    color: black;
+}
+.one {
+    background-color: rgba(179, 179, 179, 0.1);
+}
+.two {
+    opacity: 0.1;
+}
