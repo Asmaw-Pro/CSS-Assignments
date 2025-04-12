@@ -114,3 +114,14 @@ img {
     background-color: #fff;
     margin: 10px;
 }
+p {
+    display: inline-block;
+    color: #fff;
+    padding: 3px 10px;
+}
+.delete {
+    background-color: #e91e63;
+}
+.view {
+    background-color: #03A9F4
+}
