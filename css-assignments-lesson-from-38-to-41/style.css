@@ -1,0 +1,119 @@
+* , ::after , ::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+::after , ::before {
+    position: absolute;
+}
+
+/* Assignment 1 */
+.Assignment-1 div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #eee;
+    position: relative;
+    display: inline-block;
+    border: 3px solid;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 
+    5px 5px #2196f3,
+    -5px -5px #e91e63;
+    counter-increment: name;
+}
+
+.Assignment-1 div::after {
+    content: counter(name);
+    background-color: black;
+    color: white;
+    padding: 0 5px;
+    border-radius: inherit;
+    top: -10px;
+    margin-left: -10px;
+}
+
+.Assignment-1 div::before {
+    content: "element";
+    margin: 40px -30px;
+}
+
+.Assignment-1 {
+    width: fit-content;
+    margin: 20px auto;
+}
+
+/* Assignment 2 */
+.Assignment-2 div {
+    width: 100px;
+    height: 100px;
+    background-color: #efefef;
+    margin: 20px auto;
+    border-radius: 10px 50px;
+    border-top-left-radius: 10px 15px;
+    box-shadow: inset 0 0 10px 0 black;
+}
+
+/* Assignment 3 */
+section {
+    width: 550px;
+    margin:auto;
+}
+
+section div {
+    height: 250px; 
+    width: 200px;
+    display: inline-block;
+    background-color: #eee;
+    position: relative;
+}
+
+section div::after {
+    content: attr(name);
+    background-color: #03a9f4;
+    color: white;
+    width: calc(100% - 30px);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+section div::before {
+    content: attr(price);
+    background-color: #ddd;
+    width: 150px;
+    height: 150px;
+    padding-top: 60px;
+    left: 50%;
+    top: 80px;
+    margin-left: -75px;
+    border-radius: 50%;
+    text-align: center;
+    font-size:25px;
+}
+
+span {
+    background-color: #03a9f4;
+    width: 1px;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+}
+
+span::after {
+    content: "or";
+    background-color: #03a9f4;
+    color: white;
+    padding: 3px;
+    font-size: 10px;
+    top: 50%;
+    left: -7px;
+    margin-top: -10px;
+    border-radius: 50%;
+}
