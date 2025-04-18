@@ -2,9 +2,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* Assignment 1 */
-p.First {
+.First {
     background-color: #f2f2f4;
     width: 300px;
     height: 150px;
@@ -14,10 +13,10 @@ p.First {
     padding: 20px;
     transition: 0.5s;
 }
-p.First::after {
+.First::after {
     content: "Will Go Up On Hover in Half Second";
 }
-p.First::before {
+.First::before {
     background-color: #dededc;
     content: "Will Go Down After Half Second";
     position: absolute;
@@ -28,11 +27,11 @@ p.First::before {
     transition-delay: 0.5s;
 }
 
-p.First:hover {
+.First:hover {
     margin-top: 20px;
 }
 
-p.First:hover::before {
+.First:hover::before {
     top: 100px;
 }
 
