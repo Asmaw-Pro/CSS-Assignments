@@ -3,12 +3,17 @@
 }
 
 /* Assignment 1 */
+.container {
+    height: 300px;
+    width: 100%;
+}
 .First {
     background-color: #f2f2f4;
     width: 300px;
     height: 150px;
-    position: relative;
-    margin: 50px auto;
+    position: absolute;
+    left: 50%;
+    margin: 50px -160px ;
     text-align: center;
     padding: 20px;
     transition: 0.5s;
@@ -39,26 +44,27 @@
 
 .second {
     background-color: #eee !important;
-    color: transparent !important;
     border: none !important;
     width: 400px;
     margin: auto;
-    font-size: 20px !important;
+    padding: 30px !important;
+    font-size: 0px !important;
     font-weight: bold;
 }
 .second::after {
-    content: "elzero";
-    text-transform: capitalize;
+    content: "Elzero";
     color: black;
     position: absolute;
-    left: 46%;
+    font-size: 20px;
+    left: 50%;
+    margin:-10px -30px;
 }
 
 /* Assignment 3 */
 
 :root {
-    /* --mainColor: #009688;
-    --mainPadding: 10px; */
+    --mainColor: #009688;
+    --mainPadding: 10px;
 }
 .third div {
     padding: var(--mainPadding , 10px);
