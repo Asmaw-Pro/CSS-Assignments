@@ -7,23 +7,26 @@
     height: 300px;
     width: 100%;
 }
+
 .First {
     background-color: #f2f2f4;
     width: 300px;
     height: 150px;
+    padding: 20px;
     position: absolute;
     left: 50%;
     margin: 50px -160px ;
     text-align: center;
-    padding: 20px;
     transition: 0.5s;
 }
+
 .First::after {
     content: "Will Go Up On Hover in Half Second";
 }
+
 .First::before {
-    background-color: #dededc;
     content: "Will Go Down After Half Second";
+    background-color: #dededc;
     position: absolute;
     top: 65px;
     padding: 15px 34px;
@@ -49,15 +52,16 @@
     margin: auto;
     padding: 30px !important;
     font-size: 0px !important;
+    text-align: center;
     font-weight: bold;
 }
+
 .second::after {
     content: "Elzero";
+    margin:-10px -30px;
     color: black;
     position: absolute;
     font-size: 20px;
-    left: 50%;
-    margin:-10px -30px;
 }
 
 /* Assignment 3 */
@@ -66,11 +70,11 @@
     --mainColor: #009688;
     --mainPadding: 10px;
 }
+
 .third div {
-    padding: var(--mainPadding , 10px);
-    border: 2px solid ;
-    border-color: var(--mainColor , black);
+    width: calc(40 * var(--mainPadding , 10px));
     margin: var(--mainPadding , 10px) auto;
+    padding: var(--mainPadding , 10px);
+    border: calc(var(--mainPadding , 10px) / 5) solid var(--mainColor , black);
     color: var(--mainColor , red);
-    width: calc(40 * var(--mainPadding , 10px))
 }
