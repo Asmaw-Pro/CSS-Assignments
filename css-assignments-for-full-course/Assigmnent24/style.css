@@ -1,0 +1,91 @@
+body {
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contaier {
+  width: 800px;
+  padding: 20px ;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.contaier div {
+  margin: 20px 0;
+}
+.contaier div:last-child {
+  margin-bottom: 0px !important;
+}
+progress {
+  width: 100%;
+  height: 4px;
+  position: relative;
+  appearance: none;
+}
+progress::after {
+  content: attr(value) '%';
+  padding: 2px 3px;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%,-175%);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.7em;
+}
+progress::before {
+  content: "";
+  border: 5px solid;
+  position: absolute;
+  transform: translate(-50%,-135%);
+}
+label[for="Money"] + progress::after {
+  left: 80%;
+  background-color: #0075ff;
+}
+label[for="Project"] + progress::after {
+  left: 55%;
+  background-color: #f39d0c;
+}
+label[for="Team"] + progress::after {
+  left: 75%;
+  background-color: #21c45c;
+}
+label[for="Money"] + progress::before {
+  left: 80%;
+  border-color: #0075ff transparent transparent;
+}
+label[for="Project"] + progress::before {
+  left: 55%;
+  border-color: #f39d0c transparent transparent;
+}
+label[for="Team"] + progress::before {
+  left: 75%;
+  border-color: #21c45c transparent transparent;
+}
+progress::-webkit-progress-bar {
+  background-color: #eeee;
+}
+label[for="Money"] + progress::-webkit-progress-value {
+  background-color: #0075ff;
+}
+label[for="Project"] + progress::-webkit-progress-value {
+  background-color: #f39d0c;
+}
+label[for="Team"] + progress::-webkit-progress-value {
+  background-color: #21c45c;
+}
+label {
+  position: relative;
+  font-weight: bold;
+}
+label::after {
+  content: attr(for);
+  display: block;
+  position: absolute;
+  top: 0;
+  transform: translateY(-150%);
+  color: #999;
+  font-size: 0.8em;
+  font-weight: lighter;
+}

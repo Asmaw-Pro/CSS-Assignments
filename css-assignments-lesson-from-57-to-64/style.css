@@ -1,0 +1,222 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+/* Assignment 1 */
+.first-grid {
+  width: 800px;
+  height: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #dddddd;
+  font-weight: bold;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 30px;
+  counter-reset: elements;
+}
+.first-grid div {
+  padding: 5px;
+  background-color: #607d8b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-grid div::before {
+  content: "Element " counter(elements);
+  counter-increment:elements;
+}
+
+/* Assignment 2 */
+.layout {
+  width: 100%;
+  height: 600px;
+  background-color: #eee;
+  display: grid;
+  grid-template-areas: 
+    "header header header header header"
+    "section section section section aside"
+    "footer footer footer footer footer";
+  grid-template-rows: auto 1fr auto;
+}
+.layout header,
+.layout section,
+.layout aside,
+.layout footer {
+  padding: 10px;
+}
+.layout header {
+  grid-area: header;
+  background-color: #03a9f4;
+}
+.layout header::after {
+  content: "header";
+}
+.layout section {
+  grid-area: section;
+  background-color: #ff5722;
+}
+.layout section::after {
+  content: "section";
+}
+.layout aside {
+  grid-area: aside;
+  background-color: #607d8b;
+}
+.layout aside::after {
+  content: "aside";
+}
+.layout footer {
+  grid-area: footer;
+  background-color: #009688;
+}
+.layout footer::after {
+  content: "footer";
+}
+
+/* Assignment 3 */
+.second-grid {
+  width: 800px;
+  height: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #eee;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto 1fr 1fr auto;
+  gap: 10px;
+}
+.second-grid div {
+  background-color: #403f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Assignment 4 */
+.third-grid {
+  width: 800px;
+  height: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #dddddd;
+  font-weight: bold;
+  display: grid;
+  grid-template-areas: 
+    "eight eight eight"
+    "two two three"
+    "four five five"
+    "six five five"
+    "seven five five"
+    "one one one";
+  gap: 20px;
+}
+.third-grid div {
+  background-color: #03a9f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.one {grid-area: one;}
+.two {grid-area: two;}
+.three {grid-area: three;}
+.four {grid-area: four;}
+.five {grid-area: five;}
+.six {grid-area: six;}
+.seven {grid-area: seven;}
+.eight {grid-area: eight;}
+
+/* Assignment 5 */
+.fiveth-grid {
+  width: 800px;
+  height: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #ddd;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: space-between;
+  gap: 20px;
+}
+.fiveth-grid div {
+  background-color: #e91e63;
+  text-align: center;
+}
+
+/* Assignment 6 */
+main {
+  color: black;
+  padding: 30px 15%;
+  background-color: #eee;
+  display: grid;
+  grid-template-areas:
+    "Osama-Mohamed Osama-Mohamed Ahmed-Sayed Shady-Nabil"
+    "Mohamed-Ibrahim Mohamed-Mohamed Mohamed-Mohamed Shady-Nabil"
+    "Mohamed-Ibrahim Ezz-Eldin Ezz-Eldin Shady-Nabil"
+    "Mohamed-Sayed Ibrahim-Sayed Gamal-Sayed Eman-Sayed";
+  gap: 10px;
+}
+main div {
+  background: #fff;
+  padding: 15px;
+  border-bottom: 3px solid red;
+  position: relative;
+}
+.Osama-Mohamed {
+  grid-area: Osama-Mohamed;
+}
+.Ahmed-Sayed {
+  grid-area: Ahmed-Sayed;
+}
+.Shady-Nabil {
+  grid-area: Shady-Nabil;
+}
+.Mohamed-Ibrahim {
+  grid-area: Mohamed-Ibrahim;
+}
+.Mohamed-Mohamed {
+  grid-area: Mohamed-Mohamed;
+}
+.Ezz-Eldin {
+  grid-area: Ezz-Eldin;
+}
+.Mohamed-Sayed {
+  grid-area: Mohamed-Sayed;
+}
+.Ibrahim-Sayed {
+  grid-area: Ibrahim-Sayed;
+}
+.Gamal-Sayed {
+  grid-area: Gamal-Sayed;
+}
+.Eman-Sayed {
+  grid-area: Eman-Sayed;
+}
+.Shady-Nabil ,
+.Mohamed-Mohamed ,
+.Ibrahim-Sayed {
+  background-color: black;
+  color: white;
+}
+i.qutes {
+  color: #b3b3b3;
+  font-size: 50px;
+  position: absolute;
+  bottom: -20px;
+  right: 1rem;
+}
+.job {
+  color: #bbb;
+  font-size: 1em;
+  margin: 0;
+}
+.bio {
+  font-weight: bold;
+}
+.name {
+  margin: 0;
+  font-size: 1.3em;
+}

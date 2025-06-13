@@ -1,0 +1,143 @@
+:root {
+  --orange: #ff5722 ;
+  --green: #009688 ;
+}
+.Assignment-1 {
+  width: fit-content;
+  padding: 30px;
+  margin: 30px auto;
+  background: var(--orange);
+  color: white;
+  position: relative;
+}
+.Assignment-1::after ,
+.Assignment-1::before {
+  content: '';
+  width: 150px;;
+  height: 100px;;
+  background-color: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.Assignment-1::after {
+  transform:skew(10deg,10deg);
+}
+.Assignment-1::before {
+  transform:skew(-10deg,-10deg);
+}
+
+/* Assignment 2 */
+.Assignment-2 {
+  width: 150px;
+  height: 100px;
+  margin:40px  auto;
+  background-color: var(--green);
+  color: white;
+  font-size: 2.5em;
+
+  position: relative;
+}
+.Assignment-2::after,
+.Assignment-2::before {
+  content: '';
+  height: inherit;
+  background-color: inherit;
+  position: absolute;
+  z-index: -1;
+}
+.Assignment-2::after {
+  width: 20px;
+  transform: skew(20deg) translate(-110px);
+}
+.Assignment-2::before {
+  width: inherit;
+  transform: skew(20deg) translate(-20px);
+}
+/*-------------*/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*-------------*/
+
+/* Assignment 3 */
+.class {
+  /* matrix(3, 0.2679, 0, 3, 20, 100); */
+  /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() */
+  transform: scaleX(3) skewY(0.2679) skewX(0) scaleY(3) translateX(20) translateY(100);
+}
+
+/* Assignment 4 */
+.Assignment-4 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin: 50px auto;
+  transform: rotate(45deg);
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s;
+}
+.Assignment-4::before {
+  content: 'Elzero';
+  width: 285px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  position: absolute;
+  background-color: #607d8b;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: flex-end;
+  transform: rotate(-45deg) translate(-30px, 70px);
+  z-index: -1;
+  border-bottom: 4px solid black;
+}
+
+/* .Assignment 5 */
+.Assignment-5 {
+  width: 200px;
+  height: 200px;
+  margin: 200px auto;
+  position: relative;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  perspective: 300px;
+}
+.Assignment-5::after,
+.Assignment-5::before {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  color: #fff;
+  font-size: 2em;
+  font-family: sans-serif;
+  backface-visibility: hidden;
+}
+.Assignment-5::before {
+  content: 'Front';
+  background-color: #fa3664;
+}
+.Assignment-5::after {
+  content: 'Back';
+  background-color: #1692fc;
+  transform: rotateY(180deg);
+}
+.Assignment-5:hover {
+  transform: rotateY(180deg);
+}
+.second:hover {
+  transform: rotateX(180deg);
+}
+.second::after {
+  transform: rotateX(180deg);
+}

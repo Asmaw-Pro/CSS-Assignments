@@ -1,0 +1,18 @@
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px auto;
+  font-size: 3em;
+  color: #fff;
+  text-shadow:
+    0px 2px 0 #9e2bb1,
+    -2px 0px 0 #9e2bb1,
+    0px -2px 0 #9e2bb1,
+    -2px 2px 0 #9e2bb1,
+    2px 2px 0 #9e2bb1,
+    2px 2px 0 #9e2bb1,
+    2px -2px 0 #9e2bb1,
+    -2px -2px 0 #9e2bb1;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 4px;
+}

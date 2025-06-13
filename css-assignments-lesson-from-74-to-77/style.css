@@ -1,0 +1,201 @@
+.cercle {
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+  position: relative;
+  border-radius: 50%;
+}
+
+/* Assignment 1 */
+.Assignment-1 {
+  border: 5px solid #E91E63;
+  border-right-color: transparent ;
+  animation: first 1s infinite linear;
+}
+.Assignment-1:hover {
+  animation-play-state: paused;
+}
+.Assignment-1::after,
+.Assignment-1::before {
+  content: '';
+  border-radius: inherit;
+  position: absolute;
+}
+.Assignment-1::after {
+  width: 65px;
+  height: 65px;
+  top: -12px;
+  left: -12px;
+  border: 5px solid #2196F3;
+  border-left-color: transparent ;
+}
+.Assignment-1::before {
+  width: 81px;
+  height: 81px;
+  top: -20px;
+  left: -20px;
+  border: 5px solid #FFC107;
+  border-top-color: transparent ;
+}
+@keyframes first {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Assignment 2 */
+.Assignment-2 {
+  border: 5px solid #2196F3;
+  animation: second 1s infinite linear;
+}
+.Assignment-2::after {
+  width: 65px;
+  height: 65px;
+  top: -12px;
+  left: -12px;
+  border: 5px solid #FFC107;
+  animation: second 2s infinite linear;
+}
+.Assignment-2::before {
+  width: 81px;
+  height: 81px;
+  top: -20px;
+  left: -20px;
+  border: 5px solid #000;
+  animation: second 3s infinite linear;
+}
+.Assignment-2::after,
+.Assignment-2::before {
+  content: '';
+  position: absolute;
+}
+.Assignment-2,
+.Assignment-2::after,
+.Assignment-2::before {
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  animation-play-state: paused;
+}
+.Assignment-2:hover,
+.Assignment-2:hover::before,
+.Assignment-2:hover::after {
+  animation-play-state: running;
+}
+@keyframes second {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Assignment 3 */
+span.Assignment-3 {
+  display: block;
+  background-color: #eee;
+  border: 5px solid black;
+  border-left-color: transparent;
+  animation: third 1s infinite linear reverse;
+}
+@keyframes third {
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* Assignment 4 */
+.container {
+  width: 600px;
+  height: 500px;
+  padding: 10px;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  outline: 1px solid;
+}
+.L {
+  width: calc(50% - 68px);
+  position: relative;
+  border-left: 68px solid #333;
+  border-bottom: 68px solid #333;
+}
+.E {
+  width: 200px;
+  position: relative;
+  border-left: 68px solid #333;
+  background-image: linear-gradient(
+    to bottom,
+    #333 68px,
+    transparent 68px,
+    transparent 205px,
+    #333 205px,
+    #333 273px,
+    transparent 273px,
+    transparent 410px,
+    #333 410px,
+    #333 440px
+  );
+}
+.E::after,
+.L::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: #FF9800;
+  position: absolute;
+  margin: 14px;
+}
+.E::after {
+  top: 0;
+  right: 0;
+  animation: E 4s linear;
+}
+
+@keyframes E {
+  0% {
+    transform: translate(0,0);
+  }
+  11% {
+    transform: translate(-200px,0);
+  }
+  22% { 
+    transform: translate(-200px,204px);
+  }
+  33% {
+    transform: translate(0,204px);
+  }
+  44% {
+    transform: translate(-200px,204px);
+  }
+  55% {
+    transform: translate(-200px,410px) ;
+  }
+  66% {
+    transform: translate(0,410px);
+  }
+  77% {
+    transform: translate(-200px,410px);
+  }
+  88% {
+    transform: translate(-200px,0);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+.L::after {
+  right: 0;
+  bottom: -68px;
+  animation: L 4s linear 4s forwards;
+}
+@keyframes L {
+  25% {
+    transform: translate(-220px);
+  }
+  50% {
+    transform: translate(-220px,-412px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-220px,-412px);
+    opacity: 0;
+  }
+}

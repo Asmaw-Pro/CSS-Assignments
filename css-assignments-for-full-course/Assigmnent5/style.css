@@ -1,0 +1,31 @@
+.menu {
+  box-sizing: border-box;
+  width: 175px;
+  height: 150px;
+  margin: 50px auto;
+  background-color: #eeeeec;
+  display: grid;
+  gap: 15px;
+  padding: 35px;
+  overflow: hidden;
+}
+.menu span {
+  width: 100%;
+  background-color: black;
+  border-radius: 15px;
+  transition: 0.25s;
+}
+.menu:hover > span:nth-child(2) {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.menu:hover > span:not(:nth-child(2)) {
+  background-color: red;
+}
+.menu:hover > span:nth-child(1) {
+  transform: translateY(30px) rotate(-135deg);
+}
+.menu:hover > span:nth-child(3) {
+  transform: translateY(-33px) rotate(135deg);
+
+}

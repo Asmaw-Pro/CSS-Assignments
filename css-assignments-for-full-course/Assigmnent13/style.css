@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contaier {
+  display: flex;
+  width: 600px;
+  margin: 50px auto;
+  justify-content: space-between;
+  padding: 30px;background-color: #eee;
+}
+fieldset {
+  width: calc(100% / 3);
+  height: 100px;
+  margin: 0 10px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 3px #ccc;
+  border: none;
+  color: #555;
+}
+input[type="radio"] {
+  appearance: none;
+  background-color: #bbb;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+input[type="radio"]:checked {
+  background-color: #2196F3;
+}
+fieldset:has(input[type="radio"]:checked) {
+  border: 1px solid #2196F3;
+}
+span {
+  position: absolute;
+  top: 10px;
+  font-weight: bold;
+  color: #555;
+  font-size: small;
+}
+strong {
+  position: relative;
+  margin: 30px 0 -10px 5px;
+  display: block;
+  width: fit-content;
+  font-size: 2em;
+}
+strong::after {
+  content: 'TB';
+  font-size: 1.25rem;
+  position: absolute;
+  bottom: 3px;
+}
+strong::before {
+  font-weight: lighter;
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: absolute;
+  right: -90px;
+  bottom: 5px;
+  color: #888;
+}
+strong:first-child::before {
+  content: '(1000gb)';
+}
+strong:nth-child(2)::before {
+  content: '(2000gb)';
+}
+strong:nth-child(3)::before {
+  content: '(3000gb)';
+}
+p {
+  font-size: 13px;
+  font-weight: bold;
+}
+p::after {
+  content: 'month';
+  font-weight: lighter;
+  font-size: 12px;
+  color: #888;
+}

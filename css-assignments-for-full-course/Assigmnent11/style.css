@@ -1,0 +1,27 @@
+body {
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  width: 600px;
+  height: 350px;
+  margin: 50px auto;
+
+}
+table tr th,
+table tr td {
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: #fff;
+}
+td:hover {
+  color: #2196F3;
+  border-color: #2196F3;
+  background-color: #f4f4f4;
+}
+tr:has(td:hover) > td,
+table:has(td:first-child:hover) td:first-child,
+table:has(td:nth-child(2):hover) td:nth-child(2),
+table:has(td:last-child:hover) td:last-child {
+  background-color: #f4f4f4;
+}

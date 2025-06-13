@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  all: unset;
+}
+a[href*=courses] {
+  color: red;
+  font-weight: bold;
+}
+/* Another Way */
+a:not(.link):not(.url) {
+  color: green;
+  font-weight: bold;
+}
