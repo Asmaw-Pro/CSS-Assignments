@@ -3,11 +3,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .contaier {
-  display: flex;
   width: 600px;
+  padding: 30px;
   margin: 50px auto;
+  background-color: #eee;
+  display: flex;
   justify-content: space-between;
-  padding: 30px;background-color: #eee;
 }
 fieldset {
   width: calc(100% / 3);
@@ -20,10 +21,9 @@ fieldset {
   border: none;
   color: #555;
 }
-input[type="radio"] {
+input {
   appearance: none;
   background-color: #bbb;
-  padding: 0;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -31,11 +31,17 @@ input[type="radio"] {
   right: 5px;
   top: 5px;
 }
-input[type="radio"]:checked {
+input:checked {
   background-color: #2196F3;
 }
-fieldset:has(input[type="radio"]:checked) {
+fieldset:has(input:checked) {
   border: 1px solid #2196F3;
+}
+label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 span {
   position: absolute;
@@ -60,20 +66,19 @@ strong::after {
 strong::before {
   font-weight: lighter;
   font-size: 12px;
-  letter-spacing: 1px;
   position: absolute;
-  right: -90px;
+  right: -80px;
   bottom: 5px;
   color: #888;
 }
-strong:first-child::before {
+fieldset:nth-child(1) > strong::before {
   content: '(1000gb)';
 }
-strong:nth-child(2)::before {
-  content: '(2000gb)';
+fieldset:nth-child(2) > strong::before {
+content: '(2000gb)';
 }
-strong:nth-child(3)::before {
-  content: '(3000gb)';
+fieldset:nth-child(3) > strong::before {
+  content: '(5000gb)';
 }
 p {
   font-size: 13px;
