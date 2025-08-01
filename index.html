@@ -10,6 +10,7 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      text-transform: capitalize;
     }
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -43,7 +44,7 @@
     .assignments-list {
       list-style: none;
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+/*       grid-template-columns: repeat(3,1fr); */
       gap: 30px;
     }
     @media (max-width: 767px) {
@@ -72,11 +73,11 @@
       }
     }
     .assignment-card {
-      min-height:200px;
+      height:200px;
       padding: 15px;
       background-color: #f3f8ff;
       border-bottom: 4px solid #233C67;
-      border-radius: 6px;
+      border-radius: 5px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -96,15 +97,15 @@
       padding: 5px 10px 15px;
       width: fit-content;
     }
-    .assignment-card .assignment-links a:hover {
-      filter: brightness(90%);
-    }
     .assignment-card .assignment-links a {
       padding: 7px 10px;
       background-color: #c7cce4;
       color: #4470AD;
       border-radius: 3px;
       text-wrap: nowrap;
+    }
+    .assignment-card .assignment-links a:hover {
+      filter: brightness(90%);
     }
     .assignment-card .assignment-lessons {
       color: #36609c;
@@ -118,13 +119,13 @@
     footer {
       width: 100%;
       min-height: 100px;
+      margin-top: 50px;
+      background-color: #233C67;
       color: white;
       display: flex;
       flex-direction: column;
-      background-color: #233C67;
       justify-content: center;
       align-items: center;
-      margin-top: 50px;
     }
     i {
       color: white;
@@ -471,4 +472,3 @@
   </footer>
 </body>
 </html>
-
